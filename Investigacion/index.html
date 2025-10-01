@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca Personal - Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- NAVBAR -->
+        <header id="mainHeader">
+            <div class="header-container">
+                <a href="#inicio" class="brand">  
+                
+            </a>
+
+                <nav class="desktop-nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#video" class="nav-link">Video</a>
+                    <a href="#eventos" class="nav-link">Eventos</a>
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                  <!--   <a href="#testimonios" class="nav-link">Testimonios</a> -->
+                  <!--   <a href="#inscripcion" class="nav-link">Inscripción</a> -->
+                  <!--   <a href="#faq" class="nav-link">FAQ</a> -->
+                    <a href="https://t.me/c/2962845871/1" class="cta-button">Unirme</a>
+                </nav>
+
+                <button class="mobile-menu-button" id="mobileMenuButton">
+                    <span class="sr-only">Abrir menú</span>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu" id="mobileMenu" style="display: none;">
+                <div class="mobile-menu-container">
+                    <a href="#inicio" class="mobile-nav-link">Inicio</a>
+                    <a href="#video" class="mobile-nav-link">Video</a>
+                    <a href="#eventos" class="mobile-nav-link">Eventos</a>
+                    <a href="#proyectos" class="mobile-nav-link">Proyectos</a>
+                   <!-- <a href="#testimonios" class="mobile-nav-link">Testimonios</a> -->
+                   <!-- <a href="#inscripcion" class="mobile-nav-link">Inscripción</a> -->
+                   <!--  <a href="#faq" class="mobile-nav-link">FAQ</a> -->
+                    <a href="#cta" class="mobile-cta-button">Unirme</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO SECTION - AHORA OCUPA TODA LA PANTALLA -->
+        <section id="inicio">
+            <div class="hero-bg"></div>
+
+            <div class="hero-container">
+                <!-- Video en círculo a la izquierda con glow azul -->
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video class="video-element" id="heroVideo" muted playsinline loop>
+                            <source src="video.mp4" type="video/mp4">
+                            Tu navegador no soporta video.
+                        </video>
+                        <div class="video-overlay" id="videoOverlay">
+                            <div class="play-icon">
+                                <i class="fas fa-play" id="playIcon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Iconos de redes sociales debajo del círculo -->
+                    <div class="social-icons">
+                        <a href="#" class="social-icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon spotify">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Texto y CTA a la derecha -->
+                <div class="hero-content">
+                    <div class="badge"> Investigación · Terapia · Neurofisica </div>
+                    <h1 class="hero-title">Super Minds IA</h1>
+                    <p class="hero-description">
+                           Conoce los misterios de la mente subconsciente, la neurociencia, la física cuántica y la IA, y usalo en tu emprendimiento.
+                    </p>
+
+                    <div id="cta" class="cta-buttons">
+                        <a href="https://t.me/c/2962845871/1" class="cta-primary">Unirme a la comunidad</a>
+                       <!--  <a href="#newsletter" class="cta-secondary">Apuntarme a la Newsletter</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO YOUTUBE SECTION (SECCIÓN 2) -- Aqui luego mejoramos el tema del tamano del video -->
+        <section id="video" class="video-section">
+            <div class="video-section-container">
+                <h2 class="section-title"> Explorando el subconsciente, la IA y la ciencia del futuro</h2>
+                <div class="video-wrapper-yt"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ibZYPYuejmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+               
+                <div class="video-titles">
+  <h3 class="video-main-title">Expande tu consciencia borrando la energía del pasado</h3>
+  <div class="video-subtitles">
+    
+    <div class="video-subtitle">
+      <h4>Define tu intención</h4>
+      <p>Aprende a identificar tu valor único y cómo comunicarlo de manera efectiva.</p>
+    </div>
+    
+    <div class="video-subtitle">
+      <h4>Cómo tu subconsciente es el creador de todo</h4>
+      <p>Conoce cómo la información que yace en tu mente subconsciente es la creadora de tus limitaciones.</p>
+    </div>
+    
+    <div class="video-subtitle">
+      <h4>La expresión del Ser: el YO SOY, lo que hay detrás de las cosas que haces</h4>
+      <p>Entiende el valor de lo que eres.</p>
+    </div>
+    
+    <div class="video-subtitle">
+      <h4>La teoría del todo, por Rosanna Biblia</h4>
+      <p>Todo está conectado.</p>
+    </div>
+    
+    <div class="video-subtitle">
+      <h4>Encuentra tu autenticidad</h4>
+      <p>Elimina las ganas de copiar a otros y de querer tener lo que ellos tienen. Busca tu autenticidad.</p>
+    </div>
+    
+    <div class="video-subtitle">
+      <h4>Automatizaciones y sistemas para facilitar tu vida</h4>
+      <p>Usa la IA para aprender a automatizar procesos.</p>
+    </div>
+    
+    <div class="video-subtitle">
+      <h4>IA, matemáticas, neurociencia y física cuántica: la conexión</h4>
+      <p>Lo más sexy de la vida es vivir.</p>
+    </div>
+    
+  </div>
+</div>
+
+
+        </section>
+
+        <!-- CALENDARIO SECTION (SECCIÓN 3) -->
+        <section id="eventos" class="calendar-section">
+            <div class="calendar-container">
+                <h2 class="section-title">Próximos Eventos en Vivo: "Misterios del Universo" </h2>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <h3 class="calendar-title" id="calendarMonth">Septiembre 2025</h3>
+                        <div class="calendar-nav">
+                            <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                            <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid" id="calendarGrid">
+                        <!-- Los días se generarán con JavaScript -->
+                    </div>
+                    <div class="event-details">
+                        <h4 class="event-title"> Próximo evento: La Mente Subconsiente, El Cerebro y el simil con la IA</h4>
+                        <p>15 de Septiembre, 2025 - 18:00 hora España</p>
+                        <p>Una sesión en vivo donde aprenderás cómo funciona tu mente, tu cerebro y el simil con la IA</p>
+                    </div>
+                    <div class="event-details">
+                        <h4 class="event-title"> Próximo evento: Misterios del Universo</h4>
+                        <p>30 de Septiembre, 2025 - 18:00 hora España</p>
+                        <p>Una sesión en vivo donde hablaremos sobre tema del cosmos que se descubrirán el dia del vivo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS DE INVESTIGACIÓN SECTION -->
+        <section id="proyectos" class="research-projects">
+            <div class="research-container">
+                <h2 class="section-title"> Proyectos de Investigación </h2>
+                <div class="research-grid">
+                    <div class="research-card animate-on-scroll">
+                        <div class="research-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="research-title"> El pintor: el aprendizaje de una técnica </h3>
+                        <p class="research-description"> El Cerebro de un Artista Vs Generative IA Imagenes.</p>
+                        <button class="research-button" data-modal="modal1">Ver Detalles</button>
+                    </div>
+                    <div class="research-card animate-on-scroll">
+                        <div class="research-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="research-title"> Disonancia cognitiva & <i> uncanny valley </i> aplicado al marketing </h3>
+                        <p class="research-description"> Descubre Qué Hay Detrás de Este Fenómeno Conocido Como <i> Uncanny Valley </i> y Cómo Su Uso en Marketing es Percibido por Tu Audiencia.</p>
+                        <button class="research-button" data-modal="modal2">Ver Detalles</button>
+                    </div>
+                    <div class="research-card animate-on-scroll">
+                        <div class="research-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="research-title"> El lado oscuro de la empatía: redes neurales de la verdad </h3>
+                        <p class="research-description"> Lo que nunca te contaron de la empatía</p>
+                        <button class="research-button" data-modal="modal3">Ver Detalles</button>
+                    </div>
+                    <div class="research-card animate-on-scroll">
+                        <div class="research-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="research-title">Datos Médicos </h3>
+                        <p class="research-description"> El Universo De Las Infinitas Posibilidades</p>
+                        <button class="research-button" data-modal="modal4">Ver Detalles</button>
+                    </div>
+                    <div class="research-card animate-on-scroll">
+                        <div class="research-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="research-title"> Adulación, bullying y redes sociales </h3>
+                        <p class="research-description"> Un Sistema Dopaminérgico Atrofiado</p>
+                        <button class="research-button" data-modal="modal5">Ver Detalles</button>
+                    </div>
+                     <div class="research-card animate-on-scroll">
+                        <div class="research-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="research-title"> La Invencible Presencia Yo Soy Vs Las Creencias Del Intelecto </h3>
+                        <p class="research-description"> </p>
+                        <button class="research-button" data-modal="modal6">Ver Detalles</button>
+                    </div>
+                     <div class="research-card animate-on-scroll">
+                        <div class="research-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="research-title"> Archivo Judicial </h3>
+                        <p class="research-description"> Perfiles Psicológicos </p>
+                        <button class="research-button" data-modal="modal7">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="research-cta">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBwQtV1g4zkED9tHTWWsORC121DIYXEdZJRY-RAKH6Mm0Cnw/viewform?usp=header" target="_blank" class="research-cta-button">Si estás interesado, rellenar este formulario</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODALS PARA PROYECTOS DE INVESTIGACIÓN -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-video-container">
+                    <iframe src="https://www.youtube.com/embed/ibZYPYuejmk" title="El Cerebro de Un Artista" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-text">
+                 <!--   <h3>Análisis de Mercado</h3> -->
+                    <p> Detrás de cada cuadro pintado con óleos, acrílicos o un sketch hecho a crayón, 
+                        hay una historia de un artista en donde podríamos conocer su intención, 
+                        y su única expresión reflejada en cada pieza.
+                    </p>
+                    <br>
+                    <p>
+                    Desde una visión de neurociencia, el acto de pintar lleva consigo varios procesos 
+                    de coordinación ojo-mano, comandos ejecutados para que el cerebro pueda expresar 
+                    lo que ve en su interior. Distintas zonas del cerebro son utilizadas detrás de esta acción.Es importante mencionar que detrás de ese acto hay redes neuronales que han aprendido 
+                    ciertos movimientos, técnicas, donde aprendió el artista, o bien desarrolladas por sí mismo. 
+                    Hay un pensamiento en el inconsciente que da órdenes para que se ejecuten 
+                    los movimientos de las manos, etc.
+                    </p>
+                    <br>
+                    <p>
+                    Desde el punto de vista cuántico, para que funcionen todos estos procesos 
+                    (que podríamos llamar que tienen una parte motora), hay una consciencia con memorias 
+                    que permite que podamos observar el acto de pintar. 
+                    </p>
+                    <br>
+                    <p>
+                    No podemos olvidar que existe la emanación del ser en vibración única que es parte 
+                    de la materia que crea al cuerpo: átomo, molécula, célula, sistemas, órganos, 
+                    y conexión total con todas las partes del cuerpo que llevan a la persona 
+                    a este simple acto de pintar.Sabemos perfectamente que la mente subconsciente juega un papel esencial 
+                    en cada acto de nuestras vidas: gobierna el 95 % de lo que nos ocurre, 
+                    aunque muchos no son conscientes de ello. 
+                    </p>
+                    <br>
+                    <p>
+                    La información que allí yace nos puede contar historias de cómo los pensamientos, 
+                    el entorno, los antepasados, etc., pueden jugar un papel importante en la ejecución de un acto. 
+                    Aquí hablaremos de cómo la historia del arte y las influencias de corrientes de ciertas épocas 
+                    forman parte de la historia de cada artista.
+                    </p>
+                    <br>
+                    <p>
+                    Si hablamos desde el punto de vista de la mente, el artista posee patrones ocultos, 
+                    limitaciones, historias de su niñez que están contadas en cada cuadro. 
+                    Traumas individuales podrían verse en cada trazo: personalidad, identidad, etc.  Podemos ver historias de dolor, pasión, histeria, sabotaje en las obras de los artistas. 
+                    Sus redes neuronales, sus procesos de pensamiento están plasmados.
+                    </p>
+                    <br>
+                    <p>
+                    La visión de esta investigación es estudiar estos procesos individuales de los artistas 
+                    a nivel mental, neurocientífico y cuántico (observaciones en la mente subconsciente), 
+                    y compararlos con los algoritmos de inteligencia artificial de generación de imágenes.
+                    Se trata de estudiar esa aleación entre la IA y su juego de imitación 
+                    (que yo llamo <em>juego de traducción</em>) de una representación matemática 
+                    de los procesos cognitivos del cerebro vs. los procesos de los artistas.
+                    </p>
+                    <br>
+                
+                </div>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-video-container">
+                    <iframe src="https://www.youtube.com/embed/Zc1y4vqo144" title="Impacto Social" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-text">
+                    <h3>  ¿Cómo afecta el subconsciente en tu marca personal? </h3>
+                    <br>
+                    <p>Si tienes un negocio de marketing y estás empezando a usar la Inteligencia Artificial para tu negocio, esto va a interesarte.
+                         Vender va más allá de solo tener un intercambio monetario de un producto. 
+                        Hay un sinfín de dinámicas que hay detrás de una venta, que tienen que ver con 
+                        el amor propio que una persona tiene sobre sí misma.La relación que tienes contigo misma va a influir directamente en la forma 
+                        en que te comunicas con los demás, y va más allá de lo que crees.
+                    <br>
+                    <p>
+                        Cuando nos comunicamos, detrás de cada palabra hay una acción y una intención. 
+                        La mente subconsciente absorbe la información de un sinfín de memorias que se 
+                        van disparando en el día a día. En una de ellas, si has vivido memorias de 
+                        relaciones de abuso, control, manipulación, puede que estas salgan a la luz al 
+                        momento de la venta. Y sí, NO CONECTES.
+                    </p>
+                    <br>
+                    <p>
+                        En realidad, le hablamos al subconsciente y no realmente a una parte cognitiva. 
+                        Ahora, te cuento: una imagen que colocas en tus redes sociales tiene un IMPACTO 
+                        en el cerebro de la persona que la consume. Si fue hecha desde tu coherencia y 
+                        ERES la información que transmites, entonces tu contenido está lleno de conexión. 
+                        Otra cosa es que el otro entienda o no tu mensaje, pero la base de todo es la coherencia.
+                    </p>
+                    <br>
+                    <p>
+                        La base de esta investigación es ver qué impacto tienen ciertos contenidos a la hora 
+                        de generar una venta. No solo al momento en donde se hace el intercambio, sino al 
+                        consumir material generado por la IA, vs. material generado por ti, vs. material mixto (coherente).
+                    </p>
+                    <br>
+                    <p>
+                        Una decisión de negocio ejecutiva tiene que ir junto con decisiones de marketing 
+                        y entrega de producto.
+                    </p>
+                    <br>
+                    <p>Principales hallazgos:</p>
+                            <ul>
+                                <li> Una marca personal coherente atrae la audiencia ideal</li>
+                            </ul>
+        </div>
+    </div>
+</div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-video-container">
+                    <iframe src="https://www.youtube.com/embed/tCjMhVEKizw" title="Tecnología y Marca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-text">
+                    <h3> Redes Neuronales</h3>
+
+                    <p>Esta investigación explora cómo los patrones y las redes neuronales creadas a través de un trauma hacen que esta se una de forma empática con un colectivo, una persona o grupos de personas.</p>
+
+<p>La empatía, como la conocemos, es la capacidad de conectar con las emociones ajenas. El problema es que lo que no nos dicen es que conectar con el dolor del otro hace que la persona se conecte a la misma red neuronal y acreciente la situación.El dolor de un duelo no expresado afecta cómo el cerebro percibe la realidad</p>
+
+       
+                   
+                </div>
+            </div>
+        </div>
+
+         <div id="modal4" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-video-container">
+                    <iframe src="https://www.youtube.com/embed/2JxDI0sWdp8" title="Tecnología y Marca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-text">
+                    <h3> Datos Médicos</h3>
+
+                    <p>
+                        Los datos médicos son la materia prima para el emprendedor o investigador. 
+                        Las universidades y centros de investigación ya deberían estar preparados 
+                        para crear plataformas, facilitar y utilizar sus recursos como medio para 
+                        generar alianzas entre el emprendimiento y la investigación.
+                    </p>
+                    <br>
+
+                    <p>
+                        Los emprendedores merecen hacer lo que mejor saben hacer: vivir de su pasión, 
+                        investigar y desarrollar, sin necesidad de preocuparse por los recursos ni de 
+                        dónde van a provenir. Las ideas son valiosas, por eso apoyo a los emprendedores 
+                        del futuro. Mi misión es darles el mejor servicio para que cuenten con los recursos 
+                        necesarios al momento de desarrollar sus ideas.
+                    </p>
+                    <br>
+
+                    <p>
+                        <strong>BioGenerator HUB</strong>, un lugar donde puedas enfocarte en hacer crecer tu idea.
+                    </p>
+                    <br>
+                   
+                </div>
+            </div>
+        </div>
+
+         <div id="modal5" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-video-container">
+                    <iframe src="https://www.youtube.com/embed/OH3a3XHPg8s" title="Tecnología y Marca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-text">
+                    <h3> Adulación, bullying, y el autoelogio</h3>
+
+                    <p>
+                    El cerebro es una de las creaciones del hombre más hermosas que haya visto. En esta investigación quiero compartirte uno de los descubrimientos que cambió por completo mi vida,
+                    y compartirte desde un punto de vista metafísico, físico cuántico y neurociencia.
+                    </p>
+                    <br>
+
+                    <p>
+                    Los últimos 5 años me he dedicado a estudiar todo lo referente a la mente y reprogramación del subconsciente.
+                    Entre todas las certificaciones que he hecho (con los mejores que existen actualmente en el mundo (conocidos): Rosanna Biglia (Método Quantum Mind), Ricardo Enríz (Método Integra), Marissa Peer (Rapid Transformational Therapist e Hipnosis Clínica), María de Luz Da Silva (Coaching Ideal)), cuando me gradué en una de ellas, aprendí algo muy valioso, y es la base de esto.
+                    </p>
+                    <br>
+
+                    <p>
+                    Estudiando Hipnosis, en algún punto nos tocó hacer unas pasantías. Tuve unos 7 clientes durante las pasantías, y había que grabar una de las consultas y enviarla al evaluador.
+                    Cuando llegó el día de graduarme, me llamó la persona que me evaluaba. Y jamás olvidé lo que me dijo esa persona.
+                    </p>
+                    <br>
+
+                    <p>
+                    Como parte de la terapia, le decimos al cliente que se elogie a sí mismo. Cuando la persona me evaluó me dijo que, primero que nada, lo había hecho de una forma impecable, y que el único feedback era:
+                    “Oye, lo único es que ayuda a tu cliente en esa parte del elogio, porque es que muchas personas nunca han recibido eso. No saben lo que es elogiarse, puedes mostrarles o guiarlos un poco”.
+                    Nunca olvidé esa frase, así que, a partir de eso, nació esta investigación, que ha sido, entre todas, una de las que más me ha gustado.
+                    </p>
+                    <br>
+
+                    <p>
+                    Quiero contarte el poder del autoelogio, uno que no depende de nadie más que de ti. No darle poder a ninguna voz distinta a la tuya.
+                    Aquí descubrí la base de muchos problemas y efectos que las personas sufrían, ya que la imagen que tienen de sí mismos se encontraba minada de la imagen que otros tenían de ellos.
+                    Hay influencias culturales, familiares, etc., y están lejos de la realidad.
+                    </p>
+                    <br>
+
+                    <p>
+                    Hay una visión cuántica de esto y una visión de neurociencia de cómo uno crea esa información a nivel del sistema nervioso.
+                    </p>
+                    <br>
+
+                    <p>
+                    Es un patrón que genera dependencia, cuando buscamos recibir algo de alguien afuera nuestro y este no nos lo da, porque ha creado condiciones para dárnoslo.
+                    Esto lo que sucede es que es estar a la espera de que ese ser se disculpe, te diga lo contrario para sanar eso, o que cumplas con la condición que te ha dado para decírtelo o dártelo.
+                    Darle poder, inclusive a una persona que admiras, puede crear esto.
+                    Ese patrón que puede yacer oculto genera dependencia emocional y, además, causa estragos en el sistema dopaminérgico del ser.
+                    </p>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+         <div id="modal6" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-video-container">
+                    <iframe src="https://www.youtube.com/embed/rsB5m5f9cqY" title="Tecnología y Marca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-text">
+                    <h3> La Presencia Yo Soy Vs Las Creencias Del Intelecto</h3>
+                       
+
+                    <p>
+                    La Presencia YO SOY es una inteligencia que actúa en todas las cosas y en todo. En este instante está actuando en todo tu cuerpo, en el café que te estás tomando y en cada persona de tu familia. Es una inteligencia absolutamente única y puedes verla cómo se expresa a través de la matemática, pintura, escritura y lo más hermoso es que se está expresando a través de ti.
+                    </p>
+                    <br>
+
+                    <p> 
+                    Independientemente de la actividad que desempeñes, esta inteligencia está actuando a través de esa actividad. Es incondicional y no conoce de conceptos humanos como de inteligencia. Una cosa es el concepto humano de inteligencia asociado a la capacidad del hombre en la resolución de problemas, y otro es el que ha usado mucho la Sociedad, que es creer que un ser es más o menos inteligente que otro según títulos, aportes, u otra cosa material.
+                    </p>
+                    <br>
+
+                    <p>
+                    Esta inteligencia es mucho más extensa de lo que crees y tiene información de absolutamente todo lo que está ocurriendo en tu vida. Cuando ocurre una desconexión del ser, lo que ocurre es que la persona olvida esta majestuosidad y tiende a crear conceptos humanos errados y limitados, y comienza a medirlo con "cosas creadas con la mente".
+                    </p>
+                    <br>
+                    
+                    <p>
+                    A partir de la evolución del hombre, lo que ha ocurrido es que se ha creado una deshumanización, es decir, asociar al humano con una cosa, una acción y/o una posición económica. Asociar la belleza con una figura, la inteligencia con alguna carrera, o la riqueza a un número en el banco. Así se crean los conceptos humanos que conocemos como pobreza, riqueza, fealdad, belleza, inteligente o bruto.
+                    </p>
+                    <br>
+
+                    <p>
+                    Este juicio creado y sellado en tu cerebro hace grandes estragos en tu vida, porque hace un link de tu valor con ciertos conceptos humanos.
+                    </p>
+                    <br>
+
+                    <p>
+                    En este Proyecto que he creado, quiero compartirte esta investigación, en la que me he basado en cómo desarrollar el potencial humano trabajando con la inteligencia YO SOY, tu mente, y cómo ciertas actividades usan partes de tu cerebro y saber qué sucede con estas zonas cerebrales.
+                    </p>
+                    <br>
+
+                    <p>
+                    El Sistema Nervioso está involucrado, ya que es más importante el cómo te sientes cuando estás aprendiendo algo que lo que estás haciendo. Tu Sistema Emocional, Sistema de Creencias, entre otros, son importantes.
+                    </p>
+                    <br>
+                   
+                </div>
+            </div>
+        </div>
+
+         <div id="modal7" class="modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-video-container">
+                    <iframe src="https://www.youtube.com/embed/Lk6ZenLeMxI" title="Tecnología y Marca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-text">
+                    <h3> Archivo Judicial</h3>
+                       
+                  <p>
+                  Durante un proceso judicial o de investigación, los expertos en la criminología realizan una inspección completa de la persona.
+                  Estudian su perfil psicológico, y obtienen conexiones entre todos los datos de la persona: eventos de su vida, razones por las cuales está en el lugar que está, dirección,
+                  situación civil, redes sociales, todo. También hacen una serie de preguntas para verificar la información. Claramente tienen una intención, que es descartar al sospechoso
+                  o pasar al siguiente nivel.
+                  </p>
+                  <br>
+
+                  <p>
+                  Comprender por qué lleva a una persona a cometer un crimen necesitaríamos conocer la vida de la persona y, más importante, entender su subconsciente.
+                  En su subconsciente nacen todos los patrones que han llevado a una persona a actuar como actúa, y a accionar.
+                  </p>
+                  <br>
+
+                  <p>
+                  Con los datos judiciales de un cliente, podemos encontrar patrones en estos datos y verificar si existen desencadenantes comunes entre ellos.
+                  Con anterioridad yo había trabajado con patrones médicos, y juntar ambos historiales nos da más información que podemos usar.
+                  </p>
+                  <br>
+
+                  <p>
+                  Este proyecto va dirigido a emprendedores a quienes les guste la criminología y quieran usar datos para investigación.
+                  </p>
+                  <br>
+                   
+                </div>
+            </div>
+        </div>
+
+         <div class="sponsors-section">
+    
+
+    <body>
+    <div class="container">
+
+        <!-- Línea de agradecimientos -->
+        <section class="acknowledgments-line">
+            <div class="line-container">
+                <div class="line-title">
+                    <i class="fas fa-heart"></i> Agradecimientos
+                </div>
+                
+                <div class="sponsor-item">
+                    <img src="policia_estado_merida.jpg" alt="Patrocinador 1" class="sponsor-logo">
+                </div>
+                
+            <!--   <div class="sponsor-item">
+                        <div class="logo-placeholder">LOGO 2</div>
+                   </div>  -->
+                
+            <!-- <div class="sponsor-item">
+                    <div class="logo-placeholder">LOGO 3</div>
+                 </div> -->
+            </div>
+        </section>
+    </div>
+
+        <!-- QUANTUM LEAP SECTION -->
+        <section id="salto" class="quantum-leap">
+            <div class="quantum-container">
+                <h2 class="quantum-title">Da el <span>salto cuántico</span> en tu carrera</h2>
+                <ul class="quantum-list">
+                <li class="quantum-item"> Aumenta tu visibilidad en un 200 % cambiando tus creencias limitantes</li>
+                <li class="quantum-item"> Desbloquea los deseos de tu corazón</li>
+                <li class="quantum-item"> Explora el mundo de la neurociencia, la física cuántica y la consciencia</li>
+            </ul>
+            <a href="https://t.me/c/2962845871/1" class="quantum-cta">¡Quiero mi salto cuántico!</a>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section id="newsletter" class="newsletter">
+                <form class="newsletter-form" id="newsletterForm">
+                </form>   
+        </section>
+
+    
+   
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="#inicio" class="footer-link">Inicio</a>
+                    <a href="#video" class="footer-link">Video</a>
+                    <a href="#eventos" class="footer-link">Eventos</a>
+                    <a href="#proyectos" class="footer-link">Proyectos</a>
+                   <!-- <a href="#testimonios" class="footer-link">Testimonios</a> -->
+                   <!-- <a href="#inscripcion" class="footer-link">Inscripción</a> -->
+                   <!--  <a href="#faq" class="footer-link">FAQ</a> -->
+                    <a href="#" class="footer-link">Términos y Condiciones</a>
+                    <a href="#" class="footer-link">Política de Privacidad</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2023 Tu Marca. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            if (mobileMenu.style.display === 'none') {
+                mobileMenu.style.display = 'block';
+            } else {
+                mobileMenu.style.display = 'none';
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-cta-button');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.display = 'none';
+            });
+        });
+
+        // Accordion functionality
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            
+            header.addEventListener('click', () => {
+                // Close all other items
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Adjust for header height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Video functionality
+        const heroVideo = document.getElementById('heroVideo');
+        const videoOverlay = document.getElementById('videoOverlay');
+        const playIcon = document.getElementById('playIcon');
+        
+        // Iniciar la reproducción automática cuando la página carga
+        document.addEventListener('DOMContentLoaded', function() {
+            // Los navegadores modernos requieren interacción del usuario para reproducir sonido
+            // Por eso el video está silenciado por defecto
+            heroVideo.play().catch(error => {
+                console.log('La reproducción automática falló: ', error);
+            });
+        });
+        
+        // Controlar la reproducción al hacer clic en el overlay
+        let videoPlaying = true;
+        
+        videoOverlay.addEventListener('click', function() {
+            if (videoPlaying) {
+                heroVideo.pause();
+                playIcon.className = 'fas fa-play';
+            } else {
+                heroVideo.play();
+                playIcon.className = 'fas fa-pause';
+            }
+            videoPlaying = !videoPlaying;
+        });
+        
+        // Actualizar el icono cuando el video termina y se reinicia
+        heroVideo.addEventListener('ended', function() {
+            // Reiniciar el video (por el loop esto no debería ocurrir, pero por si acaso)
+            heroVideo.currentTime = 0;
+            heroVideo.play();
+            playIcon.className = 'fas fa-pause';
+            videoPlaying = true;
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('mainHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.getElementById('newsletterForm');
+        const toast = document.getElementById('toast');
+        
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            showToast('¡Te has suscrito correctamente!', 3000);
+            newsletterForm.reset();
+        });
+
+        // Toast notification function
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        // Initialize animations on load and scroll
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Calendar functionality
+        const calendarGrid = document.getElementById('calendarGrid');
+        const calendarMonth = document.getElementById('calendarMonth');
+        const prevMonthBtn = document.getElementById('prevMonth');
+        const nextMonthBtn = document.getElementById('nextMonth');
+        
+        let currentDate = new Date();
+        let currentMonth = currentDate.getMonth();
+        let currentYear = currentDate.getFullYear();
+        
+        const months = [
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+        
+        function renderCalendar() {
+            // Clear previous calendar
+            calendarGrid.innerHTML = '';
+            
+            // Set month title
+            calendarMonth.textContent = `${months[currentMonth]} ${currentYear}`;
+            
+            // Get first day of month
+            const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+            // Get last day of month
+            const lastDate = new Date(currentYear, currentMonth + 1, 0).getDate();
+            
+            // Create day headers
+            const daysOfWeek = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
+            daysOfWeek.forEach(day => {
+                const dayElement = document.createElement('div');
+                dayElement.classList.add('calendar-day');
+                dayElement.textContent = day;
+                calendarGrid.appendChild(dayElement);
+            });
+            
+            // Add empty cells for days before first day of month
+            for (let i = 0; i < firstDay; i++) {
+                const emptyCell = document.createElement('div');
+                emptyCell.classList.add('calendar-date');
+                calendarGrid.appendChild(emptyCell);
+            }
+            
+            // Add cells for each day of the month
+            for (let i = 1; i <= lastDate; i++) {
+                const dateCell = document.createElement('div');
+                dateCell.classList.add('calendar-date');
+                dateCell.textContent = i;
+                
+                // Highlight today
+                if (i === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear()) {
+                    dateCell.classList.add('today');
+                }
+                
+                // Add event indicator for specific dates
+                if ((i === 15 && currentMonth === 8) || (i === 22 && currentMonth === 8) || (i === 5 && currentMonth === 9)) {
+                    dateCell.classList.add('event');
+                }
+                
+                calendarGrid.appendChild(dateCell);
+            }
+        }
+        
+        prevMonthBtn.addEventListener('click', () => {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            renderCalendar();
+        });
+        
+        nextMonthBtn.addEventListener('click', () => {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            renderCalendar();
+        });
+        
+        // Initialize calendar
+        renderCalendar();
+
+        // Modal functionality
+        const modalButtons = document.querySelectorAll('.research-button');
+        const modals = document.querySelectorAll('.modal');
+        const closeButtons = document.querySelectorAll('.close-modal');
+        
+        modalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal');
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Close modal when clicking outside
+        modals.forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
