@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IA School</title>
+  <style>
+    :root{
+      --bg1: #050507;
+      --bg2: #071226;
+      --accent: #1F8BFF;
+      --muted: #a8b3c8;
+    }
+    *{box-sizing:border-box}
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at top left, var(--bg1), var(--bg2) 60%, #000 100%);
+      color: #fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{max-width:1200px;margin:0 auto;padding:28px}
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      backdrop-filter: blur(6px);
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin: 0 0 8px 0;
+    }
+    header p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .video-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 36px 20px;
+    }
+    .video-card{
+      width: 100%;
+      max-width: 960px;
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.04);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+    .video-card iframe{
+      width:100%;
+      height:480px;
+      border:0;
+      display:block;
+    }
+    section {padding:48px 20px}
+    .section-title{font-size:1.6rem;color:#89c6ff;text-align:center;margin-bottom:18px}
+    .course-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+      max-width:1100px;
+      margin:0 auto;
+    }
+    .course-card {
+      position:relative;
+      border-radius:14px;
+      overflow:hidden;
+      cursor:pointer;
+      transition:transform .28s ease, box-shadow .28s ease;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2));
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .course-card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 18px 40px rgba(0,0,0,0.65)}
+    .course-card img{width:100%;height:220px;object-fit:cover;display:block}
+    .card-body{padding:14px;background:linear-gradient(180deg, transparent, rgba(0,0,0,0.5))}
+    .card-title{margin:0;font-weight:700;font-size:1.05rem;color:#fff;text-align:center}
+    .pill{position:absolute;top:12px;left:12px;background:rgba(255,255,255,0.06);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);backdrop-filter:blur(6px)}
+    footer{margin-top:36px;padding:28px 20px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
+    @media(max-width:640px){
+      .video-card iframe{height:220px}
+      header{padding:48px 12px}
+      header h1{font-size:2.2rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>IA School</h1>
+      <p>Aprende Inteligencia Artificial con cursos diseñados como películas: descubre, reproduce y accede al curso con un clic.</p>
+    </header>
+
+    <div class="video-section">
+      <div class="video-card" role="region" aria-label="Video explicativo IA School">
+        <!-- Replace the src below with your preferred video. -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video explicativo IA School" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <section aria-labelledby="cursos-title">
+      <h2 id="cursos-title" class="section-title">Explora nuestros cursos</h2>
+
+      <div class="course-grid">
+        <div class="course-card" role="link" tabindex="0" aria-label="Abrir curso IA para Médicos" onclick="openCourse('https://example.com/curso-medicos')" onkeypress="if(event.key==='Enter') openCourse('https://example.com/curso-medicos')">
+          <span class="pill">IA para Médicos</span>
+          <img src="https://images.unsplash.com/photo-1606813902914-3f2a5e4a0f20?auto=format&fit=crop&w=1200&q=80" alt="IA aplicada a la medicina">
+          <div class="card-body">
+            <h3 class="card-title">Curso de IA aplicada a la Medicina</h3>
+          </div>
+        </div>
+
+        <div class="course-card" role="link" tabindex="0" aria-label="Abrir curso IA para Todos" onclick="openCourse('IAForEveryOne.html')" onkeypress="if(event.key==='Enter') openCourse('IAForEveryOne.html')">
+          <span class="pill">IA para Todos</span>
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" alt="Introducción a la IA">
+          <div class="card-body">
+            <h3 class="card-title">Curso de Introducción a la IA</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      © 2025 IA School — Aprendiendo el futuro, hoy.
+    </footer>
+  </div>
+
+  <script>
+    function openCourse(url){
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
